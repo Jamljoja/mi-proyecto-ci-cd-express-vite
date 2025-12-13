@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Endpoint simple para probar el backend
 app.get("/api/saludo", (req, res) => {
-  res.json({ mensaje: "Hola desde el backend con Express + CI/CD 🚀" });
+  res.json({ mensaje: "Mensaje actualizado CI/CD 🚀" });
 });
 
 app.listen(PORT, () => {

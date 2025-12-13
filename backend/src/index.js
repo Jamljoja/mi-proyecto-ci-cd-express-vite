@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Endpoint simple para probar el backend
 app.get("/api/saludo", (req, res) => {
-  res.json({ mensaje: "Mensaje actualizado CI/CD 🚀" });
+  res.json({ mensaje: "Aqui mostrando el backend con pipeline y render" });
 });
 
 app.listen(PORT, () => {

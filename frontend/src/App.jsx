@@ -4,8 +4,11 @@ function App() {
   const [mensaje, setMensaje] = useState("Cargando...");
 
   useEffect(() => {
-    // Ajusta la URL según dónde corra el backend
-    fetch("http://localhost:4000/api/saludo")
+    // Ajusta la URL luego según dónde corra el backend
+    //const API_URL = "https://backend-express-ci-cd.onrender.com";
+
+    //fetch("http://localhost:4000/api/saludo")
+    fetch("https://backend-express-ci-cd-latest-vk82.onrender.com/api/saludo")
       .then((res) => res.json())
       .then((data) => setMensaje(data.mensaje))
       .catch(() =>
@@ -23,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+
